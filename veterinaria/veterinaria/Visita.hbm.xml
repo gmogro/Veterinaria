@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="veterinaria" namespace="veterinaria.Entities">
+	<class name = "Visita" table = "visita">
+		<id name = "Codigo" column = "cod_vis" type = "int" unsaved-value = "0"> </id>
+		<property name="Fecha" column="fecha" not-null="false" type="string"/>
+		<property name="Descripcion" column="descripcion" not-null="false" type="string"/>
+	    <property name="Enfermedad" column="enfermedad" not-null="false" type="string"/>
+	</class> 
+</hibernate-mapping>
+
